@@ -1,0 +1,13 @@
+name,brand,condition,usecase,cpu,ram,ssd,screen,battery,price,badges,image
+HP EliteBook 840 G5,HP,exuk,"office,dev",Core i5-8350U,16GB,256GB SSD,14",~6 hrs,32500,"Ex-UK Grade A,Top Seller",
+Lenovo ThinkPad T480,Lenovo,exuk,"office,school,dev",Core i5-8250U,8GB,256GB SSD,14",~7 hrs,29500,Ex-UK Grade A,
+Dell Latitude 7490,Dell,exuk,"office,dev",Core i7-8650U,16GB,512GB SSD,14",~6.5 hrs,38900,"Ex-UK Grade A,Best for Coding",
+Lenovo Legion 5,Lenovo,new,"gaming,creative",Ryzen 7 5800H,16GB,512GB SSD,15.6",~5 hrs,118000,"Brand New,Best for Coding",
+HP Pavilion 15,HP,new,"school,office",Core i5-1235U,8GB,512GB SSD,15.6",~8 hrs,68000,Brand New,
+Dell XPS 13,Dell,exuk,"dev,creative,office",Core i7-8550U,16GB,512GB SSD,13.3",~7 hrs,47500,"Ex-UK Grade A,Top Seller",
+HP ZBook 15 G5,HP,exuk,"creative,dev,gaming",Core i7-8850H + Quadro,32GB,512GB SSD,15.6",~5 hrs,62000,"Ex-UK Grade A,Best for Design",
+Lenovo IdeaPad 3,Lenovo,new,school,Core i3-1215U,8GB,256GB SSD,15.6",~7 hrs,42000,"Brand New,Budget Pick",
+Dell Latitude 5490,Dell,exuk,"office,school",Core i5-8350U,8GB,256GB SSD,14",~6 hrs,26500,"Ex-UK Grade A,Budget Pick",
+ASUS TUF Gaming A15,Other,new,gaming,Ryzen 5 7535HS,16GB,512GB SSD,15.6",~5 hrs,95000,Brand New,
+HP EliteBook 850 G6,HP,exuk,"office,dev",Core i7-8665U,16GB,512GB SSD,15.6",~6 hrs,41500,"Ex-UK Grade A,Best for Coding",
+Lenovo ThinkPad X1 Carbon,Lenovo,exuk,"office,dev,creative",Core i7-8650U,16GB,512GB SSD,14",~8 hrs,54000,"Ex-UK Grade A,Top Seller",

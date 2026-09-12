@@ -1,0 +1,218 @@
+/* ==========================================================================
+   KYMTECH — CUSTOM STYLES
+   ==========================================================================
+   Tailwind (loaded via CDN in index.html) handles almost everything on this
+   page — spacing, colors, layout, responsive breakpoints. This file only
+   holds the handful of things Tailwind's utility classes can't do on their
+   own: custom shapes, glass/blur effects, and small interaction details.
+
+   If you're looking for "why does X look like that" and it's a simple
+   color/spacing/font thing, check the class names in index.html first —
+   it's probably a Tailwind utility, not something in here.
+   ========================================================================== */
+
+
+/* --- Base page behaviour -------------------------------------------------
+   Smooth-scrolling for the in-page nav links (#store, #why-exuk, etc.), and
+   locking in our two brand fonts so nothing falls back to a system font. */
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  background: #fff;
+}
+
+h1, h2, h3, h4, .font-display {
+  font-family: 'Sora', sans-serif;
+}
+
+
+/* --- Keyboard accessibility -----------------------------------------------
+   Anyone tabbing through the site with a keyboard (not just mouse/touch)
+   needs a visible focus ring. Tailwind's default outline gets removed by
+   some browsers' reset styles, so we set our own in the brand color. */
+a:focus-visible,
+button:focus-visible,
+input:focus-visible {
+  outline: 2px solid #E63946;
+  outline-offset: 2px;
+}
+
+
+/* --- Hero section shapes ---------------------------------------------------
+   The dark hero panel is cut with a diagonal bottom edge instead of a
+   straight line, so it doesn't look like a generic "boxed banner". The glow
+   ring behind the laptop illustration is a soft red radial gradient. */
+.diag-bottom {
+  clip-path: polygon(0 0, 100% 0, 100% 92%, 0 100%);
+}
+
+.glow-ring {
+  background: radial-gradient(circle at 50% 50%, rgba(230, 57, 70, 0.35) 0%, rgba(230, 57, 70, 0) 70%);
+}
+
+/* --- "Glass" panels ---------------------------------------------------
+   Used for the little floating info cards in the hero, and the testimonial
+   cards on the dark background. `glass` is for dark backgrounds (semi-
+   transparent white), `glass-light` is the same idea for light backgrounds
+   (used in the "Why Ex-UK" cards). */
+.glass {
+  background: rgba(255, 255, 255, 0.06);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+}
+
+.glass-light {
+  background: rgba(255, 255, 255, 0.65);
+  backdrop-filter: blur(8px);
+  border: 1px solid rgba(11, 19, 43, 0.06);
+}
+
+
+/* --- Filter buttons ---------------------------------------------------
+   All the filter pills (use case / condition / brand) share this class.
+   The actual "selected" look is driven by the `aria-pressed="true"` attribute
+   that filters.js toggles when someone clicks a button — using the ARIA
+   attribute for styling (instead of a separate CSS class) means the visual
+   state and the accessible state can never drift out of sync. */
+.filter-btn {
+  transition: all .18s ease;
+}
+
+.filter-btn[aria-pressed="true"] {
+  background: #0B132B;
+  color: #fff;
+  border-color: #0B132B;
+}
+
+
+/* --- Product cards ---------------------------------------------------
+   A small lift-and-shadow on hover to make the grid feel tactile. Kept
+   subtle on purpose — this runs on every card in the grid, so anything
+   flashier gets tiring fast when you're scrolling past a dozen of them. */
+.card-lift {
+  transition: transform .22s ease, box-shadow .22s ease;
+}
+
+.card-lift:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 20px 40px -18px rgba(11, 19, 43, 0.35);
+}
+
+
+/* --- Small utility classes ---------------------------------------------------
+   `fade-hidden` is toggled by ui.js to show/hide the "no results" message
+   without deleting it from the DOM (simpler than juggling innerHTML for it). */
+.fade-hidden {
+  display: none;
+}
+
+.badge {
+  font-size: 11px;
+  letter-spacing: 0.01em;
+  font-weight: 600;
+}
+
+
+/* --- Scrollbar styling ---------------------------------------------------
+   Cosmetic only — thins out the default browser scrollbar so the horizontal
+   testimonial scroller on mobile doesn't look like a bulky OS control. */
+::-webkit-scrollbar {
+  height: 6px;
+  width: 6px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #cbd5e1;
+  border-radius: 4px;
+}
+
+
+/* --- Hero laptop mockup ---------------------------------------------------
+   The whole hero's content (headline, copy, CTAs, trust stats) lives INSIDE
+   a laptop-shaped frame, so the page reads as "you're looking at the
+   screen of an actual laptop". Three parts:
+     .laptop-mock__bezel  - the screen + its frame (this is where the real
+                             hero content sits — see index.html)
+     .laptop-mock__base   - a thin trapezoid below it, standing in for the
+                             laptop's keyboard deck/body
+     .laptop-sticker       - small rotated badges placed on the bezel, like
+                             decals a real laptop owner would stick on —
+                             used for trust/social callouts (e.g. the
+                             TikTok handle) without cluttering the headline
+   Pure CSS shapes — no image assets, so it stays crisp at any size and
+   costs nothing to load. */
+
+.laptop-mock__bezel {
+  position: relative;
+  background: linear-gradient(180deg, #16204a 0%, #121a3e 100%);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 22px;
+  padding: 42px clamp(20px, 5vw, 56px) 44px;
+  box-shadow:
+    0 40px 80px -28px rgba(0, 0, 0, 0.55),
+    inset 0 1px 0 rgba(255, 255, 255, 0.06);
+}
+
+/* the little webcam dot centred at the top of the "screen" */
+.laptop-mock__cam {
+  position: absolute;
+  top: 16px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 7px;
+  height: 7px;
+  border-radius: 999px;
+  background: #2e3a66;
+  box-shadow: 0 0 0 3px rgba(255, 255, 255, 0.03);
+}
+
+/* the laptop's body/keyboard deck, directly beneath the screen — a simple
+   trapezoid (narrower at the top than the bottom) so it reads as being
+   viewed slightly from above, like a laptop sitting on a desk. */
+.laptop-mock__base {
+  position: relative;
+  height: 20px;
+  margin: 0 -3%;
+  background: linear-gradient(180deg, #1c274f 0%, #121a3e 100%);
+  clip-path: polygon(3% 0, 97% 0, 100% 100%, 0% 100%);
+  border-radius: 0 0 10px 10px;
+  box-shadow: 0 18px 34px -14px rgba(0, 0, 0, 0.55);
+}
+
+/* the small front lip/groove used to lift a laptop's lid, for realism */
+.laptop-mock__base::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 88px;
+  max-width: 30%;
+  height: 6px;
+  background: #0b132b;
+  border-radius: 0 0 8px 8px;
+}
+
+.laptop-sticker {
+  position: absolute;
+}
+
+
+/* --- Motion preferences ---------------------------------------------------
+   Respect people who've told their OS they don't want animations. This
+   turns off the hover-lift and filter-button transitions and the smooth
+   in-page scrolling. Nothing else on this page animates on its own, so
+   there isn't much else to switch off. */
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  .card-lift,
+  .filter-btn {
+    transition: none;
+  }
+}
