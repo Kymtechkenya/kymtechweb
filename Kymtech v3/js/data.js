@@ -22,8 +22,8 @@
 
 // The WhatsApp number every "Order via WhatsApp" button messages.
 // Format: country code + number, NO leading "+", NO spaces or dashes.
-// e.g. Kenyan number 0791 617 868 becomes "254791617868".
-const WHATSAPP_NUMBER = "254791617868"; // TODO: confirm this is the permanent number before going live
+// e.g. Kenyan number 0723 512 233 becomes "254723512233".
+const WHATSAPP_NUMBER = "254723512233"; // TODO: confirm this is the permanent number before going live
 
 // The published Google Sheet (as CSV) that holds the live stock list.
 //
