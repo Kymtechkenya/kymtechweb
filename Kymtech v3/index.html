@@ -1,0 +1,585 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>KymTech — Quality Laptops, Direct to Your Hands in Kenya</title>
+<meta name="description" content="KymTech.co.ke — Ex-UK refurbished and brand-new HP, Lenovo & Dell laptops in Kenya. Order directly via WhatsApp, fast delivery countrywide.">
+<meta name="robots" content="index, follow">
+
+<!-- ==========================================================================
+     DISCOVERABILITY: search engines + AI agents
+     ==========================================================================
+     Everything in this block is about being findable and quotable — by
+     Google/Bing, and increasingly by AI assistants and "answer engines"
+     that browse the web or read structured data when someone asks
+     something like "where can I buy a laptop in Kenya".
+
+     IMPORTANT: update the canonical URL and Open Graph "url" below to your
+     real domain once this is live (they currently assume
+     https://kymtech.co.ke/ — change every occurrence if that's wrong). -->
+
+<!-- Canonical URL: tells search engines this is the one true version of
+     this page, even if it's ever reachable through more than one link. -->
+<link rel="canonical" href="https://kymtech.co.ke/">
+
+<!-- Open Graph tags: control how this page looks when shared as a link on
+     WhatsApp, Facebook, LinkedIn, etc — and are also read by a number of
+     AI browsing tools when they summarise or cite a page. -->
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="KymTech">
+<meta property="og:title" content="KymTech — Quality Laptops, Direct to Your Hands in Kenya">
+<meta property="og:description" content="Ex-UK refurbished and brand-new HP, Lenovo & Dell laptops in Kenya. Order directly via WhatsApp, fast delivery countrywide.">
+<meta property="og:url" content="https://kymtech.co.ke/">
+<meta property="og:locale" content="en_KE">
+
+<!-- Twitter/X card — same idea as Open Graph, for that platform specifically. -->
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="KymTech — Quality Laptops, Direct to Your Hands in Kenya">
+<meta name="twitter:description" content="Ex-UK refurbished and brand-new HP, Lenovo & Dell laptops in Kenya. Order directly via WhatsApp, fast delivery countrywide.">
+
+<!-- Structured data (schema.org, via JSON-LD): a machine-readable summary
+     of "who is this business" — name, what it sells, where it operates,
+     how to contact it. This is the single most useful thing on this page
+     for getting KymTech correctly recognised and cited by AI platforms
+     and Google's AI Overviews, because it removes any guesswork about
+     what the business is versus having to infer it from prose.
+     Keep the phone number/address here in sync with the footer below. -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ElectronicsStore",
+  "name": "KymTech",
+  "alternateName": "KymTech Kenya",
+  "url": "https://kymtech.co.ke/",
+  "description": "KymTech sells Ex-UK refurbished and brand-new laptops (HP, Lenovo, Dell and other brands) in Kenya, with countrywide delivery and orders placed directly via WhatsApp.",
+  "areaServed": {
+    "@type": "Country",
+    "name": "Kenya"
+  },
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Kimathi Street",
+    "addressLocality": "Nairobi",
+    "addressCountry": "KE"
+  },
+  "telephone": "+254791617868",
+  "priceRange": "KSh 25,000 - KSh 150,000",
+  "paymentAccepted": ["M-Pesa", "Cash", "Bank Transfer"],
+  "makesOffer": [
+    { "@type": "Offer", "itemOffered": { "@type": "Product", "name": "Ex-UK Refurbished Laptops (HP, Lenovo, Dell)" } },
+    { "@type": "Offer", "itemOffered": { "@type": "Product", "name": "Brand New Laptops (HP, Lenovo, Dell and other brands)" } }
+  ],
+  "sameAs": []
+}
+</script>
+<!-- The empty "sameAs" array above is where you'd list KymTech's other
+     official profiles once they exist — e.g.
+     "sameAs": ["https://facebook.com/kymtech", "https://instagram.com/kymtech"]
+     This is one of the strongest trust signals for both search engines and
+     AI platforms: it confirms the same business controls all those profiles. -->
+
+<!-- Brand fonts: Sora for headlines, Inter for body text (see js/tailwind-config.js) -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+<!-- Tailwind CSS, loaded straight from their CDN — no build step needed.
+     tailwind-config.js MUST come right after this, before anything tries
+     to use a custom class like bg-midnight or font-display. -->
+<script src="https://cdn.tailwindcss.com"></script>
+<script src="js/tailwind-config.js"></script>
+
+<!-- PapaParse: turns the Google Sheet's CSV export into a JS array.
+     Used by js/data.js. -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.4.1/papaparse.min.js"></script>
+
+<!-- Our own styles: everything Tailwind's utility classes can't do
+     (custom shapes, glass effects, focus rings, etc). -->
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body class="text-midnight antialiased">
+
+<!-- ============ STICKY HEADER ============ -->
+<header class="sticky top-0 z-50 bg-white/90 backdrop-blur-md border-b border-black/5">
+  <div class="max-w-7xl mx-auto px-5 sm:px-8 h-16 flex items-center justify-between">
+    <a href="#top" class="flex items-center gap-2 shrink-0">
+      <span class="w-9 h-9 rounded-lg bg-midnight flex items-center justify-center">
+        <span class="text-white font-display font-extrabold text-sm">K</span>
+      </span>
+      <span class="font-display font-bold text-lg tracking-tight">Kym<span class="text-crimson">Tech</span></span>
+    </a>
+
+    <nav class="hidden md:flex items-center gap-8 text-sm font-medium text-midnight/80">
+      <a href="#store" class="hover:text-crimson transition-colors">Shop Laptops</a>
+      <a href="#why-exuk" class="hover:text-crimson transition-colors">Why Ex-UK?</a>
+      <a href="#blog" class="hover:text-crimson transition-colors">Blog</a>
+      <a href="#process" class="hover:text-crimson transition-colors">How It Works</a>
+      <a href="#testimonials" class="hover:text-crimson transition-colors">Reviews</a>
+      <a href="#footer" class="hover:text-crimson transition-colors">Contact</a>
+    </nav>
+
+    <!-- Header WhatsApp button.
+         NOTE ON THE PHONE NUMBER: there are actually two places it lives —
+         1) js/data.js's WHATSAPP_NUMBER constant, which drives the "Order
+            via WhatsApp" button on every individual laptop card (built
+            dynamically in js/ui.js).
+         2) Hardcoded wa.me links like this one, sprinkled through the
+            static parts of the page (header, hero, "Why Ex-UK", final CTA,
+            footer text, mobile bottom bar) — these do NOT read from
+            data.js, so changing the number means updating each of these
+            by hand (or a find-and-replace across index.html and the two
+            files in /blog for the current number, 254791617868). -->
+    <a href="https://wa.me/254791617868?text=Hi%20KymTech%2C%20I%27d%20like%20some%20help%20choosing%20a%20laptop"
+       target="_blank" rel="noopener"
+       class="flex items-center gap-2 bg-leaf hover:bg-[#0f7a41] text-white text-sm font-semibold px-4 py-2.5 rounded-full transition-colors">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.7.44 3.36 1.28 4.83L2 22l5.4-1.42a9.9 9.9 0 0 0 4.64 1.18h.01c5.46 0 9.9-4.45 9.9-9.91C21.95 6.45 17.5 2 12.04 2zm5.8 14.1c-.24.68-1.4 1.32-1.94 1.4-.5.08-1.12.11-1.8-.11-.42-.13-.95-.31-1.64-.6-2.88-1.24-4.76-4.13-4.9-4.32-.14-.2-1.17-1.56-1.17-2.98 0-1.42.75-2.11 1.01-2.4.26-.28.58-.36.77-.36.2 0 .39 0 .56.01.18.01.42-.07.66.5.24.58.82 2.01.9 2.15.07.15.12.32.02.52-.1.2-.15.32-.3.5-.15.17-.3.38-.44.51-.15.15-.3.31-.13.6.17.3.76 1.25 1.63 2.02 1.12 1 2.06 1.31 2.36 1.46.3.15.47.13.65-.08.17-.2.73-.85.92-1.14.19-.3.39-.24.65-.15.26.1 1.68.79 1.96.94.29.14.48.21.55.33.07.12.07.7-.17 1.38z"/></svg>
+      WhatsApp Us
+    </a>
+  </div>
+</header>
+
+<!-- ============ HERO ============
+     The entire hero is styled to look like an actual laptop — everything
+     inside .laptop-mock__bezel (badge, headline, copy, buttons, trust
+     stats) is real content, not decoration; the "screen/bezel/base" shapes
+     around it are pure CSS (see the "Hero laptop mockup" section in
+     css/style.css). The small rotated badges are meant to read as decals
+     stuck on the lid — including one linking out to the KymTech TikTok,
+     since that's a more honest way to bring Kym into the page than trying
+     to fake a photo of him. -->
+<section id="top" class="relative bg-midnight diag-bottom pb-24 pt-14 sm:pt-20 overflow-hidden">
+  <div class="absolute -top-20 right-0 w-[520px] h-[520px] glow-ring pointer-events-none"></div>
+  <div class="absolute inset-0 opacity-[0.04]" style="background-image:radial-gradient(#fff 1px, transparent 1px); background-size:22px 22px;"></div>
+
+  <div class="max-w-6xl mx-auto px-5 sm:px-8 relative">
+
+    <div class="laptop-mock">
+      <div class="laptop-mock__bezel">
+        <span class="laptop-mock__cam" aria-hidden="true"></span>
+
+        <!-- "Stickers" on the lid. Hidden on the smallest screens (via
+             hidden sm:flex) so they don't crowd a narrow bezel — the
+             TikTok one is the one exception, kept visible everywhere
+             since it's the whole point of this redesign. -->
+        <a href="https://www.tiktok.com/@kymtechcomputers" target="_blank" rel="noopener"
+           class="laptop-sticker -top-4 right-5 sm:right-10 flex items-center gap-1.5 bg-crimson text-white text-[11px] font-semibold px-3 py-1.5 rounded-full shadow-lg"
+           style="transform: rotate(5deg);">
+          🎥 @kymtechcomputers
+        </a>
+
+        <div class="laptop-sticker hidden sm:flex -bottom-4 left-6 sm:left-12 items-center gap-2 glass px-3 py-2 rounded-xl shadow-lg" style="transform: rotate(-4deg);">
+          <span class="w-6 h-6 rounded-full bg-leaf/25 flex items-center justify-center text-leaf font-bold text-[10px]">✓</span>
+          <div class="text-white text-[11px] leading-tight">
+            <p class="font-semibold">Verified Ex-UK unit</p>
+            <p class="text-white/50">Diagnostics passed</p>
+          </div>
+        </div>
+
+        <div class="laptop-sticker hidden lg:block -bottom-3 right-10 glass px-3 py-2 rounded-xl shadow-lg" style="transform: rotate(3deg);">
+          <p class="text-white text-[11px] font-semibold">Pay on delivery*</p>
+          <p class="text-white/50 text-[10px]">Select areas</p>
+        </div>
+
+        <!-- The actual "screen contents" -->
+        <div class="grid lg:grid-cols-12 gap-10 items-center">
+          <div class="lg:col-span-7 text-white">
+            <div class="inline-flex items-center gap-2 text-xs font-semibold text-white/70 bg-white/5 border border-white/10 rounded-full px-3 py-1.5 mb-6">
+              <span class="w-1.5 h-1.5 rounded-full bg-leaf"></span>
+              Nairobi-based &middot; Delivering countrywide
+            </div>
+
+            <h1 class="font-display font-extrabold text-3xl sm:text-4xl lg:text-[2.85rem] leading-[1.1] tracking-tight">
+              Quality laptops, delivered straight into your hands across Kenya
+            </h1>
+
+            <p class="mt-5 text-white/70 text-base leading-relaxed max-w-lg">
+              Grade-A Ex-UK refurbished and brand-new HP, Lenovo & Dell machines, tested and warrantied
+              before they ever leave our Nairobi store. Tell us what you need it for — we'll match you to the right machine.
+            </p>
+
+            <div class="mt-8 flex flex-col sm:flex-row gap-4">
+              <a href="#store" class="text-center bg-crimson hover:bg-crimsondark transition-colors text-white font-semibold px-7 py-3.5 rounded-full">
+                Browse by use case
+              </a>
+              <a href="https://wa.me/254791617868?text=Hi%20KymTech%2C%20I%27d%20like%20some%20help%20choosing%20a%20laptop" target="_blank" rel="noopener"
+                 class="text-center glass hover:bg-white/10 transition-colors text-white font-semibold px-7 py-3.5 rounded-full">
+                Chat with a laptop advisor
+              </a>
+            </div>
+          </div>
+
+          <!-- Trust stats, styled as small stacked "widgets" on the
+               screen rather than a plain row — makes better use of the
+               laptop's wide aspect ratio on desktop. -->
+          <div class="lg:col-span-5 grid grid-cols-3 lg:grid-cols-1 gap-3">
+            <div class="glass rounded-xl px-4 py-3 flex lg:items-center gap-3">
+              <p class="font-display font-bold text-xl sm:text-2xl text-white">48hr</p>
+              <p class="text-white/55 text-[11px] sm:text-xs leading-snug">Delivery to most towns</p>
+            </div>
+            <div class="glass rounded-xl px-4 py-3 flex lg:items-center gap-3">
+              <p class="font-display font-bold text-xl sm:text-2xl text-white">6 mo</p>
+              <p class="text-white/55 text-[11px] sm:text-xs leading-snug">Warranty on every unit</p>
+            </div>
+            <div class="glass rounded-xl px-4 py-3 flex lg:items-center gap-3">
+              <p class="font-display font-bold text-xl sm:text-2xl text-white">A-Grade</p>
+              <p class="text-white/55 text-[11px] sm:text-xs leading-snug">Cosmetic &amp; function check</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- The keyboard deck — purely decorative, completes the laptop shape -->
+      <div class="laptop-mock__base" aria-hidden="true"></div>
+    </div>
+
+    <!-- Explains the concept in plain words for anyone who doesn't clock
+         it visually, and doubles as a second nudge toward the TikTok. -->
+    <p class="text-center text-white/40 text-xs mt-8">
+      👀 This is basically what's on Kym's own laptop screen — for real unboxings and stock drops,
+      follow <a href="https://www.tiktok.com/@kymtechcomputers" target="_blank" rel="noopener" class="text-white/70 hover:text-white underline underline-offset-2">@kymtechcomputers on TikTok</a>.
+    </p>
+  </div>
+</section>
+
+<!-- trust strip -->
+<div class="bg-ice border-b border-black/5">
+  <div class="max-w-7xl mx-auto px-5 sm:px-8 py-5 flex flex-wrap items-center justify-center sm:justify-between gap-x-10 gap-y-3 text-sm text-midnight/70 font-medium">
+    <span class="flex items-center gap-2">🚚 Fast delivery, Nairobi &amp; upcountry</span>
+    <span class="flex items-center gap-2">🔍 Verified Ex-UK quality checks</span>
+    <span class="flex items-center gap-2">🛡️ Warranty included on every laptop</span>
+    <span class="flex items-center gap-2">📲 Order in one WhatsApp message</span>
+  </div>
+</div>
+
+<!-- ============ STORE / FILTER + GRID ============
+     Everything in here is driven by JavaScript:
+       - js/data.js    supplies the `laptops` array
+       - js/filters.js wires up every button/input below
+       - js/ui.js      draws the actual cards into #laptopGrid
+     The <div id="laptopGrid"> starts empty on purpose — it's filled in
+     the moment the page's scripts run (see js/app.js). -->
+<section id="store" class="max-w-7xl mx-auto px-5 sm:px-8 py-16 sm:py-20">
+  <div class="max-w-2xl">
+    <h2 class="font-display font-bold text-3xl sm:text-4xl leading-tight">Find the right laptop for what you actually do</h2>
+    <p class="mt-3 text-slate">Tap a use case, narrow by condition or brand, or search a model directly. The grid updates instantly.</p>
+  </div>
+
+  <!-- search -->
+  <div class="mt-8 relative max-w-md">
+    <input id="searchInput" type="text" placeholder="Search by model, e.g. HP EliteBook"
+      class="w-full bg-ice border border-black/5 rounded-full py-3 pl-11 pr-4 text-sm placeholder:text-slate/70 focus:bg-white transition-colors">
+    <svg class="absolute left-4 top-1/2 -translate-y-1/2 text-slate" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m21 21-4.3-4.3"/></svg>
+  </div>
+
+  <!-- use case filters
+       Each button's data-usecase value must exactly match one of the
+       useCase entries used in the laptop data (js/data.js / the sheet's
+       "usecase" column): gaming, school, office, dev, creative. -->
+  <div class="mt-7">
+    <p class="text-xs font-semibold uppercase tracking-wide text-slate/70 mb-3">Use case</p>
+    <div id="useCaseFilters" class="flex flex-wrap gap-2.5" role="group" aria-label="Filter by use case">
+      <button data-usecase="all" aria-pressed="true" class="filter-btn bg-midnight text-white border border-midnight text-sm font-medium px-4 py-2.5 rounded-full">All laptops</button>
+      <button data-usecase="gaming" aria-pressed="false" class="filter-btn bg-white border border-black/10 text-sm font-medium px-4 py-2.5 rounded-full hover:border-midnight/30">🎮 Gaming & Rendering</button>
+      <button data-usecase="school" aria-pressed="false" class="filter-btn bg-white border border-black/10 text-sm font-medium px-4 py-2.5 rounded-full hover:border-midnight/30">🎓 School & University</button>
+      <button data-usecase="office" aria-pressed="false" class="filter-btn bg-white border border-black/10 text-sm font-medium px-4 py-2.5 rounded-full hover:border-midnight/30">💼 Office & Business</button>
+      <button data-usecase="dev" aria-pressed="false" class="filter-btn bg-white border border-black/10 text-sm font-medium px-4 py-2.5 rounded-full hover:border-midnight/30">💻 Software Development</button>
+      <button data-usecase="creative" aria-pressed="false" class="filter-btn bg-white border border-black/10 text-sm font-medium px-4 py-2.5 rounded-full hover:border-midnight/30">🎬 Content Creation & Design</button>
+    </div>
+  </div>
+
+  <!-- secondary filters: condition + brand -->
+  <div class="mt-6 flex flex-wrap gap-8">
+    <div>
+      <p class="text-xs font-semibold uppercase tracking-wide text-slate/70 mb-3">Condition</p>
+      <div id="conditionFilters" class="flex flex-wrap gap-2.5" role="group" aria-label="Filter by condition">
+        <button data-condition="all" aria-pressed="true" class="filter-btn bg-midnight text-white border border-midnight text-sm font-medium px-4 py-2 rounded-full">All</button>
+        <button data-condition="exuk" aria-pressed="false" class="filter-btn bg-white border border-black/10 text-sm font-medium px-4 py-2 rounded-full hover:border-midnight/30">Ex-UK (Refurbished)</button>
+        <button data-condition="new" aria-pressed="false" class="filter-btn bg-white border border-black/10 text-sm font-medium px-4 py-2 rounded-full hover:border-midnight/30">Brand New</button>
+      </div>
+    </div>
+    <div>
+      <p class="text-xs font-semibold uppercase tracking-wide text-slate/70 mb-3">Brand</p>
+      <div id="brandFilters" class="flex flex-wrap gap-2.5" role="group" aria-label="Filter by brand">
+        <button data-brand="all" aria-pressed="true" class="filter-btn bg-midnight text-white border border-midnight text-sm font-medium px-4 py-2 rounded-full">All</button>
+        <button data-brand="HP" aria-pressed="false" class="filter-btn bg-white border border-black/10 text-sm font-medium px-4 py-2 rounded-full hover:border-midnight/30">HP</button>
+        <button data-brand="Lenovo" aria-pressed="false" class="filter-btn bg-white border border-black/10 text-sm font-medium px-4 py-2 rounded-full hover:border-midnight/30">Lenovo</button>
+        <button data-brand="Dell" aria-pressed="false" class="filter-btn bg-white border border-black/10 text-sm font-medium px-4 py-2 rounded-full hover:border-midnight/30">Dell</button>
+        <button data-brand="Other" aria-pressed="false" class="filter-btn bg-white border border-black/10 text-sm font-medium px-4 py-2 rounded-full hover:border-midnight/30">Other brands</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Filled in by ui.js's render(), e.g. "Showing 4 of 12 laptops" -->
+  <p id="resultCount" class="mt-7 text-sm text-slate"></p>
+
+  <!-- The product grid itself — starts empty, ui.js fills this in -->
+  <div id="laptopGrid" class="mt-4 grid sm:grid-cols-2 lg:grid-cols-3 gap-6"></div>
+
+  <!-- "Load more" — only shown when there are more matching laptops than
+       are currently on screen (ui.js's render() toggles fade-hidden on
+       the wrapper). This is what lets the spreadsheet grow to 30, 50,
+       100+ laptops without the homepage turning into one giant wall of
+       cards — nothing here needs to change as stock grows, it's driven
+       entirely by how many rows are in the sheet. -->
+  <div id="loadMoreWrap" class="fade-hidden mt-10 text-center">
+    <button id="loadMoreBtn" class="border border-midnight/15 hover:border-midnight/30 transition-colors text-midnight font-semibold text-sm px-6 py-3 rounded-full">
+      Load more laptops
+    </button>
+  </div>
+
+  <!-- Shown instead of the grid when filters match zero laptops.
+       Hidden by default via the fade-hidden class (see style.css);
+       ui.js toggles that class on/off as needed. -->
+  <p id="emptyState" class="fade-hidden text-center py-16 text-slate">
+    No laptops match those filters yet. <button id="resetFilters" class="text-crimson font-semibold underline">Reset filters</button> or message us directly on WhatsApp with what you need.
+  </p>
+</section>
+
+<!-- ============ WHY EX-UK ============ -->
+<section id="why-exuk" class="bg-ice py-16 sm:py-20">
+  <div class="max-w-7xl mx-auto px-5 sm:px-8">
+    <div class="grid lg:grid-cols-12 gap-12">
+      <div class="lg:col-span-5">
+        <h2 class="font-display font-bold text-3xl sm:text-4xl leading-tight">Why Ex-UK, and not just any "cheap" laptop?</h2>
+        <p class="mt-4 text-slate leading-relaxed">
+          Ex-UK units come from corporate and institutional lease returns in the United Kingdom — business-grade
+          machines like ThinkPads, EliteBooks and Latitudes, built for daily office use over 3–4 years. They're a
+          different category from generic low-end laptops sold as "new" but built with budget parts.
+        </p>
+        <a href="https://wa.me/254791617868?text=Hi%20KymTech%2C%20I%20have%20a%20question%20about%20Ex-UK%20laptops"
+           target="_blank" rel="noopener" class="inline-flex mt-6 text-crimson font-semibold hover:text-crimsondark">
+          Ask us anything about grading & warranty
+        </a>
+      </div>
+
+      <div class="lg:col-span-7">
+        <div class="grid sm:grid-cols-2 gap-4">
+          <div class="glass-light rounded-2xl p-6">
+            <p class="font-display font-bold text-lg mb-2">Built for the enterprise</p>
+            <p class="text-sm text-slate leading-relaxed">Business lines (ThinkPad, EliteBook, Latitude) use magnesium-alloy
+              chassis and higher-spec components than most consumer "new" laptops at the same price point.</p>
+          </div>
+          <div class="glass-light rounded-2xl p-6">
+            <p class="font-display font-bold text-lg mb-2">Graded before sale</p>
+            <p class="text-sm text-slate leading-relaxed">Every unit is inspected for battery health, screen condition,
+              keyboard and ports, then labelled Grade A, A- or B so you know exactly what you're buying.</p>
+          </div>
+          <div class="glass-light rounded-2xl p-6">
+            <p class="font-display font-bold text-lg mb-2">Real cost savings</p>
+            <p class="text-sm text-slate leading-relaxed">You get a Core i5/i7 business laptop for roughly the price of an
+              entry-level new machine with a fraction of the processing power.</p>
+          </div>
+          <div class="glass-light rounded-2xl p-6">
+            <p class="font-display font-bold text-lg mb-2">Backed by warranty</p>
+            <p class="text-sm text-slate leading-relaxed">Refurbished doesn't mean unsupported — every Ex-UK unit ships
+              with a warranty period and our own diagnostics report.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ BLOG ============
+     Two teaser cards linking out to standalone article pages in /blog.
+     Kept as separate HTML pages (not inline accordions) so each article
+     gets its own URL, its own <title>/meta description, and its own
+     Article structured data — all of which matters for search engines
+     and AI answer engines that cite specific pages, not just the homepage.
+     Add a third card here (and a matching file in /blog) any time you
+     write a new post; nothing else on the page needs to change. -->
+<section id="blog" class="max-w-7xl mx-auto px-5 sm:px-8 py-16 sm:py-20">
+  <div class="max-w-2xl">
+    <h2 class="font-display font-bold text-3xl sm:text-4xl leading-tight">Guides &amp; advice</h2>
+    <p class="mt-3 text-slate">Straight answers to the questions we get asked most in-store and on WhatsApp.</p>
+  </div>
+
+  <div class="mt-10 grid sm:grid-cols-2 gap-6">
+    <article class="card-lift bg-white rounded-2xl border border-black/5 overflow-hidden flex flex-col">
+      <div class="bg-ice px-6 pt-6 pb-5">
+        <span class="badge inline-block px-2.5 py-1 rounded-full bg-leaf/10 text-leaf">Buying Guide</span>
+        <h3 class="font-display font-bold text-xl mt-3 leading-snug">How to Choose the Best Laptop for College or University in Kenya</h3>
+      </div>
+      <div class="p-6 flex flex-col flex-1">
+        <p class="text-sm text-slate leading-relaxed flex-1">
+          RAM, storage, battery life, and whether Ex-UK or brand-new makes more sense on a student budget —
+          a practical walkthrough for picking a laptop that survives four years of coursework.
+        </p>
+        <a href="blog/choosing-a-laptop-for-college-kenya.html"
+           class="mt-5 inline-flex items-center gap-1.5 text-crimson font-semibold text-sm hover:text-crimsondark">
+          Read the guide
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+        </a>
+      </div>
+    </article>
+
+    <article class="card-lift bg-white rounded-2xl border border-black/5 overflow-hidden flex flex-col">
+      <div class="bg-ice px-6 pt-6 pb-5">
+        <span class="badge inline-block px-2.5 py-1 rounded-full bg-crimson/10 text-crimson">Maintenance</span>
+        <h3 class="font-display font-bold text-xl mt-3 leading-snug">How to Maintain Your Laptop: Preventing Overheating &amp; Loud Fan Noise</h3>
+      </div>
+      <div class="p-6 flex flex-col flex-1">
+        <p class="text-sm text-slate leading-relaxed flex-1">
+          If your fan is screaming or your laptop's too hot to rest on your lap, it's usually one of a few
+          fixable causes. Here's how to diagnose it and stop it becoming a repair bill.
+        </p>
+        <a href="blog/prevent-laptop-overheating-fan-noise.html"
+           class="mt-5 inline-flex items-center gap-1.5 text-crimson font-semibold text-sm hover:text-crimsondark">
+          Read the guide
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+        </a>
+      </div>
+    </article>
+  </div>
+</section>
+
+<!-- ============ PROCESS ============
+     This one's genuinely a sequence (step 1, then 2, then 3), which is
+     why it's the one place on the page that uses numbered markers. -->
+<section id="process" class="max-w-7xl mx-auto px-5 sm:px-8 py-16 sm:py-20">
+  <h2 class="font-display font-bold text-3xl sm:text-4xl text-center">Ordering takes three steps</h2>
+  <div class="mt-12 grid sm:grid-cols-3 gap-8">
+    <div class="text-center sm:text-left">
+      <div class="w-11 h-11 rounded-full bg-midnight text-white font-display font-bold flex items-center justify-center mx-auto sm:mx-0">1</div>
+      <p class="font-display font-semibold text-lg mt-4">Select your laptop</p>
+      <p class="text-slate text-sm mt-2 leading-relaxed">Filter by use case, condition and brand until you find the match, or ask our advisor directly.</p>
+    </div>
+    <div class="text-center sm:text-left">
+      <div class="w-11 h-11 rounded-full bg-midnight text-white font-display font-bold flex items-center justify-center mx-auto sm:mx-0">2</div>
+      <p class="font-display font-semibold text-lg mt-4">Tap the WhatsApp button</p>
+      <p class="text-slate text-sm mt-2 leading-relaxed">Your message is pre-filled with the exact model and price — no forms, no back-and-forth.</p>
+    </div>
+    <div class="text-center sm:text-left">
+      <div class="w-11 h-11 rounded-full bg-midnight text-white font-display font-bold flex items-center justify-center mx-auto sm:mx-0">3</div>
+      <p class="font-display font-semibold text-lg mt-4">Fast delivery, flexible pay</p>
+      <p class="text-slate text-sm mt-2 leading-relaxed">We confirm stock, dispatch same or next day, with pay-on-delivery available in select Nairobi areas.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ============ TESTIMONIALS ============
+     Static content for now — if this ever needs to grow past 3-4 reviews,
+     it'd be worth moving these into the same spreadsheet as the stock
+     list (a second sheet/tab) rather than hardcoding more of them here. -->
+<section id="testimonials" class="bg-midnight py-16 sm:py-20 overflow-hidden">
+  <div class="max-w-7xl mx-auto px-5 sm:px-8">
+    <div class="flex items-end justify-between flex-wrap gap-4">
+      <h2 class="font-display font-bold text-3xl sm:text-4xl text-white">Trusted by buyers across the country</h2>
+    </div>
+  </div>
+
+  <div class="mt-10 flex gap-6 px-5 sm:px-8 max-w-full overflow-x-auto sm:overflow-visible sm:grid sm:grid-cols-3 sm:max-w-7xl sm:mx-auto">
+    <div class="glass rounded-2xl p-6 min-w-[280px] sm:min-w-0">
+      <p class="text-white/85 text-sm leading-relaxed">"Ordered a ThinkPad on a Tuesday morning and it was in Kilimani by Wednesday afternoon. Battery still holds 5 hours."</p>
+      <p class="mt-4 text-white font-semibold text-sm">Wanjiru M.</p>
+      <p class="text-white/50 text-xs">Nairobi</p>
+    </div>
+    <div class="glass rounded-2xl p-6 min-w-[280px] sm:min-w-0">
+      <p class="text-white/85 text-sm leading-relaxed">"I needed something for AutoCAD on a student budget. They recommended a Dell with a dedicated GPU instead of a weak new laptop — glad I listened."</p>
+      <p class="mt-4 text-white font-semibold text-sm">Brian O.</p>
+      <p class="text-white/50 text-xs">Mombasa</p>
+    </div>
+    <div class="glass rounded-2xl p-6 min-w-[280px] sm:min-w-0">
+      <p class="text-white/85 text-sm leading-relaxed">"Paid on delivery, the tech showed me the diagnostics report before I handed over cash. That transparency is why I'm buying my second laptop from them."</p>
+      <p class="mt-4 text-white font-semibold text-sm">Faith A.</p>
+      <p class="text-white/50 text-xs">Kisumu</p>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FINAL CTA ============ -->
+<section class="max-w-7xl mx-auto px-5 sm:px-8 py-16 sm:py-20 text-center">
+  <h2 class="font-display font-bold text-3xl sm:text-4xl max-w-2xl mx-auto leading-tight">Not sure which laptop fits your budget and workload?</h2>
+  <p class="mt-4 text-slate max-w-lg mx-auto">Send us your use case and price range on WhatsApp — we'll shortlist two or three options in minutes.</p>
+  <a href="https://wa.me/254791617868?text=Hi%20KymTech%2C%20I%20need%20help%20choosing%20a%20laptop.%20My%20budget%20is%20and%20I%20need%20it%20for"
+     target="_blank" rel="noopener"
+     class="inline-flex mt-7 bg-crimson hover:bg-crimsondark transition-colors text-white font-semibold px-8 py-4 rounded-full">
+    Get a recommendation on WhatsApp
+  </a>
+</section>
+
+<!-- ============ FOOTER ============
+     The contact details and store address here are typed by hand, not
+     pulled from data.js — update them directly if they ever change. -->
+<footer id="footer" class="bg-midnight2 pt-16 pb-28 sm:pb-16">
+  <div class="max-w-7xl mx-auto px-5 sm:px-8 grid sm:grid-cols-2 lg:grid-cols-4 gap-10">
+    <div>
+      <div class="flex items-center gap-2">
+        <span class="w-9 h-9 rounded-lg bg-white/10 flex items-center justify-center">
+          <span class="text-white font-display font-extrabold text-sm">K</span>
+        </span>
+        <span class="font-display font-bold text-lg text-white">Kym<span class="text-crimson">Tech</span></span>
+      </div>
+      <p class="text-white/50 text-sm mt-4 leading-relaxed">Ex-UK refurbished and brand-new laptops, sold directly to buyers across Kenya since day one.</p>
+    </div>
+
+    <div>
+      <p class="text-white font-semibold text-sm mb-4">Quick links</p>
+      <ul class="space-y-2.5 text-sm text-white/50">
+        <li><a href="#store" class="hover:text-white transition-colors">Shop laptops</a></li>
+        <li><a href="#why-exuk" class="hover:text-white transition-colors">Why Ex-UK</a></li>
+        <li><a href="#blog" class="hover:text-white transition-colors">Blog</a></li>
+        <li><a href="#process" class="hover:text-white transition-colors">How it works</a></li>
+        <li><a href="#testimonials" class="hover:text-white transition-colors">Customer reviews</a></li>
+      </ul>
+    </div>
+
+    <div>
+      <p class="text-white font-semibold text-sm mb-4">Store & pickup</p>
+      <ul class="space-y-2.5 text-sm text-white/50 leading-relaxed">
+        <li>Kimathi Street, Nairobi CBD (by appointment)</li>
+        <li>Mon–Sat, 8:30am–6:00pm</li>
+        <li>Pay-on-delivery within Nairobi & select towns</li>
+      </ul>
+    </div>
+
+    <div>
+      <p class="text-white font-semibold text-sm mb-4">Contact & payment</p>
+      <ul class="space-y-2.5 text-sm text-white/50">
+        <li>WhatsApp: +254 791 617 868</li>
+        <li>Email: hello@kymtech.co.ke</li>
+      </ul>
+      <div class="flex items-center gap-2 mt-4">
+        <span class="bg-white/10 text-white text-xs font-semibold px-3 py-1.5 rounded-md">M-PESA</span>
+        <span class="bg-white/10 text-white text-xs font-semibold px-3 py-1.5 rounded-md">Cash on Delivery</span>
+        <span class="bg-white/10 text-white text-xs font-semibold px-3 py-1.5 rounded-md">Bank Transfer</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="max-w-7xl mx-auto px-5 sm:px-8 mt-12 pt-6 border-t border-white/10 text-xs text-white/35 flex flex-col sm:flex-row justify-between gap-2">
+    <p>© 2026 KymTech.co.ke. All rights reserved.</p>
+    <p>Built for buyers across Nairobi, Mombasa, Kisumu & beyond.</p>
+  </div>
+</footer>
+
+<!-- ============ MOBILE FIXED BOTTOM BAR ============
+     Only visible below the sm breakpoint (see the `sm:hidden` class) —
+     desktop visitors already have the header's WhatsApp button in view. -->
+<div class="fixed bottom-0 inset-x-0 z-50 sm:hidden bg-white border-t border-black/10 px-4 py-3 flex items-center gap-3">
+  <a href="#store" class="flex-1 text-center border border-midnight/15 text-midnight font-semibold text-sm py-3 rounded-full">
+    Browse laptops
+  </a>
+  <a href="https://wa.me/254791617868?text=Hi%20KymTech%2C%20I%27d%20like%20some%20help%20choosing%20a%20laptop" target="_blank" rel="noopener"
+     class="flex-1 text-center bg-leaf text-white font-semibold text-sm py-3 rounded-full flex items-center justify-center gap-2">
+    <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.7.44 3.36 1.28 4.83L2 22l5.4-1.42a9.9 9.9 0 0 0 4.64 1.18h.01c5.46 0 9.9-4.45 9.9-9.91C21.95 6.45 17.5 2 12.04 2zm5.8 14.1c-.24.68-1.4 1.32-1.94 1.4-.5.08-1.12.11-1.8-.11-.42-.13-.95-.31-1.64-.6-2.88-1.24-4.76-4.13-4.9-4.32-.14-.2-1.17-1.56-1.17-2.98 0-1.42.75-2.11 1.01-2.4.26-.28.58-.36.77-.36.2 0 .39 0 .56.01.18.01.42-.07.66.5.24.58.82 2.01.9 2.15.07.15.12.32.02.52-.1.2-.15.32-.3.5-.15.17-.3.38-.44.51-.15.15-.3.31-.13.6.17.3.76 1.25 1.63 2.02 1.12 1 2.06 1.31 2.36 1.46.3.15.47.13.65-.08.17-.2.73-.85.92-1.14.19-.3.39-.24.65-.15.26.1 1.68.79 1.96.94.29.14.48.21.55.33.07.12.07.7-.17 1.38z"/></svg>
+    WhatsApp
+  </a>
+</div>
+
+<!-- ============ SCRIPTS ============
+     Order matters here — each file depends on globals defined by the
+     one(s) before it:
+       1. data.js    - stock data + the Google Sheet loader
+       2. ui.js      - reads `laptops`, draws cards, defines render()
+       3. filters.js - defines `state`, wires up buttons/search, calls render()
+       4. app.js     - the "go" button: kicks off the very first load
+     Don't reorder these, or move them into <head> — they expect the
+     HTML above to already exist in the page. -->
+<script src="js/data.js"></script>
+<script src="js/ui.js"></script>
+<script src="js/filters.js"></script>
+<script src="js/app.js"></script>
+
+</body>
+</html>
