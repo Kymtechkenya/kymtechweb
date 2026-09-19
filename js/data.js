@@ -41,7 +41,7 @@ const WHATSAPP_NUMBER = "254723512233"; // TODO: confirm this is the permanent n
 // Leave this as an empty string to skip the Google Sheet entirely and
 // just use the built-in FALLBACK_LAPTOPS list below (handy for testing,
 // or while you're still setting the sheet up).
-const SHEET_CSV_URL = "https://docs.google.com/spreadsheets/d/e/2PACX-1vTbBtMrSM9WL8G42YydazVaARMl-8RSIm3miys7YKtJlICov_6KA2ySs3S1lCraaYSRe6R1PRsjjLcG/pub?gid=893064689&single=true&output=csv";
+const SHEET_CSV_URL = "";
 
 
 /* --------------------------------------------------------------------------
