@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>How to Choose the Best Laptop for College or University in Kenya | KymTech</title>
+<meta name="description" content="A practical, spec-by-spec guide to picking a laptop for university or college in Kenya — what to prioritise by course, realistic budgets in KSh, and Ex-UK vs brand-new.">
+<meta name="robots" content="index, follow">
+<meta name="author" content="KymTech">
+
+<link rel="canonical" href="https://kymtech.co.ke/blog/choosing-a-laptop-for-college-kenya.html">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="KymTech">
+<meta property="og:title" content="How to Choose the Best Laptop for College or University in Kenya">
+<meta property="og:description" content="What to prioritise by course, realistic budgets in KSh, and Ex-UK vs brand-new — a practical buying guide from KymTech.">
+<meta property="og:url" content="https://kymtech.co.ke/blog/choosing-a-laptop-for-college-kenya.html">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="How to Choose the Best Laptop for College or University in Kenya">
+<meta name="twitter:description" content="What to prioritise by course, realistic budgets in KSh, and Ex-UK vs brand-new.">
+
+<!-- Article structured data: tells search engines and AI platforms exactly
+     what this page is, who published it, and when — useful for anything
+     that surfaces "guides" or "articles" as an answer, not just product
+     listings. The "publisher" block ties this article back to the same
+     KymTech Organization/LocalBusiness identity declared on the homepage. -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "How to Choose the Best Laptop for College or University in Kenya",
+  "description": "A practical, spec-by-spec guide to picking a laptop for university or college in Kenya — what to prioritise by course, realistic budgets in KSh, and Ex-UK vs brand-new.",
+  "author": { "@type": "Organization", "name": "KymTech" },
+  "publisher": {
+    "@type": "Organization",
+    "name": "KymTech",
+    "url": "https://kymtech.co.ke/"
+  },
+  "mainEntityOfPage": "https://kymtech.co.ke/blog/choosing-a-laptop-for-college-kenya.html",
+  "datePublished": "2026-09-08",
+  "dateModified": "2026-09-08"
+}
+</script>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<script src="https://cdn.tailwindcss.com"></script>
+<script src="../js/tailwind-config.js"></script>
+<link rel="stylesheet" href="../css/style.css">
+</head>
+<body class="text-midnight antialiased">
+
+<!-- Simplified header — no search/filter controls here since this is a
+     reading page, not the shop. Same logo and WhatsApp button as home
+     for visual consistency. -->
+<header class="sticky top-0 z-50 bg-white/90 backdrop-blur-md border-b border-black/5">
+  <div class="max-w-7xl mx-auto px-5 sm:px-8 h-16 flex items-center justify-between">
+    <a href="../index.html" class="flex items-center gap-2 shrink-0">
+      <span class="w-9 h-9 rounded-lg bg-midnight flex items-center justify-center">
+        <span class="text-white font-display font-extrabold text-sm">K</span>
+      </span>
+      <span class="font-display font-bold text-lg tracking-tight">Kym<span class="text-crimson">Tech</span></span>
+    </a>
+
+    <nav class="hidden md:flex items-center gap-8 text-sm font-medium text-midnight/80">
+      <a href="../index.html#store" class="hover:text-crimson transition-colors">Shop Laptops</a>
+      <a href="../index.html#blog" class="hover:text-crimson transition-colors">Blog</a>
+      <a href="../index.html#footer" class="hover:text-crimson transition-colors">Contact</a>
+    </nav>
+
+    <a href="https://wa.me/254723512233?text=Hi%20KymTech%2C%20I%27d%20like%20some%20help%20choosing%20a%20laptop"
+       target="_blank" rel="noopener"
+       class="flex items-center gap-2 bg-leaf hover:bg-[#0f7a41] text-white text-sm font-semibold px-4 py-2.5 rounded-full transition-colors">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.7.44 3.36 1.28 4.83L2 22l5.4-1.42a9.9 9.9 0 0 0 4.64 1.18h.01c5.46 0 9.9-4.45 9.9-9.91C21.95 6.45 17.5 2 12.04 2zm5.8 14.1c-.24.68-1.4 1.32-1.94 1.4-.5.08-1.12.11-1.8-.11-.42-.13-.95-.31-1.64-.6-2.88-1.24-4.76-4.13-4.9-4.32-.14-.2-1.17-1.56-1.17-2.98 0-1.42.75-2.11 1.01-2.4.26-.28.58-.36.77-.36.2 0 .39 0 .56.01.18.01.42-.07.66.5.24.58.82 2.01.9 2.15.07.15.12.32.02.52-.1.2-.15.32-.3.5-.15.17-.3.38-.44.51-.15.15-.3.31-.13.6.17.3.76 1.25 1.63 2.02 1.12 1 2.06 1.31 2.36 1.46.3.15.47.13.65-.08.17-.2.73-.85.92-1.14.19-.3.39-.24.65-.15.26.1 1.68.79 1.96.94.29.14.48.21.55.33.07.12.07.7-.17 1.38z"/></svg>
+      WhatsApp Us
+    </a>
+  </div>
+</header>
+
+<!-- Article header -->
+<header class="bg-midnight py-14 sm:py-20">
+  <div class="max-w-3xl mx-auto px-5 sm:px-8 text-white">
+    <nav aria-label="Breadcrumb" class="text-xs text-white/50 flex items-center gap-2">
+      <a href="../index.html" class="hover:text-white transition-colors">Home</a>
+      <span>/</span>
+      <a href="../index.html#blog" class="hover:text-white transition-colors">Blog</a>
+      <span>/</span>
+      <span class="text-white/70">Buying Guide</span>
+    </nav>
+    <span class="badge inline-block mt-6 px-2.5 py-1 rounded-full bg-leaf/15 text-leaf">Buying Guide</span>
+    <h1 class="font-display font-extrabold text-3xl sm:text-4xl leading-tight mt-4">
+      How to Choose the Best Laptop for College or University in Kenya
+    </h1>
+    <p class="mt-4 text-white/60 text-sm">Published 8 September 2026 &middot; 7 min read</p>
+  </div>
+</header>
+
+<!-- Article body — plain prose, styled with Tailwind's typography utilities
+     directly (no @tailwindcss/typography plugin available on the CDN
+     build, so headings/spacing are set by hand below). -->
+<main class="max-w-3xl mx-auto px-5 sm:px-8 py-14 sm:py-16">
+  <article class="space-y-6 text-[15px] sm:text-base leading-relaxed text-midnight/85">
+
+    <p>
+      Every year we get the same message on WhatsApp around late August and early January: "I'm joining
+      campus next month, which laptop should I get?" It's a fair question, and a slightly stressful one —
+      you're usually buying one laptop that has to survive three or four years of assignments, group
+      projects, and at least one all-nighter before a deadline. Here's how to think about it properly,
+      instead of just buying whatever's cheapest in the shop window.
+    </p>
+
+    <h2 class="font-display font-bold text-2xl text-midnight mt-10">Start with the specs that actually matter</h2>
+    <p>
+      Laptop spec sheets throw a lot of numbers at you, but for a student, only a handful of them change
+      how the laptop actually feels to use day to day.
+    </p>
+
+    <h3 class="font-display font-semibold text-lg text-midnight mt-6">Processor (CPU)</h3>
+    <p>
+      This is the laptop's "brain speed". For general coursework — Word, browser tabs, PowerPoint,
+      Zoom calls — an Intel Core i5 or AMD Ryzen 5 handles everything comfortably. Avoid entry-level
+      Celeron or Pentium chips if you can; they're fine for very light use, but they slow down fast once
+      you've got ten browser tabs and a Word document open at the same time, which is basically every
+      study session.
+    </p>
+
+    <h3 class="font-display font-semibold text-lg text-midnight mt-6">RAM (memory)</h3>
+    <p>
+      8GB is the realistic minimum in 2026 — anything less and you'll feel it the moment you have a browser,
+      a PDF reader, and Word open together. If your course involves heavier software (we'll get to which
+      ones below), 16GB is worth paying extra for; it's one of the cheapest upgrades that makes the biggest
+      difference to how "stuck" the laptop feels under pressure.
+    </p>
+
+    <h3 class="font-display font-semibold text-lg text-midnight mt-6">Storage</h3>
+    <p>
+      Get an SSD, not a traditional hard drive (HDD) — this alone is the difference between a laptop that
+      boots in 15 seconds and one that boots in two minutes. 256GB is enough for most students once you're
+      using cloud storage (Google Drive, OneDrive) for backups; go to 512GB if you'll be storing a lot of
+      design files, videos, or software installers locally.
+    </p>
+
+    <h3 class="font-display font-semibold text-lg text-midnight mt-6">Battery life &amp; weight</h3>
+    <p>
+      Not every lecture hall has enough sockets for forty laptops, and you won't always want to carry a
+      charger to a 6-hour day on campus. Look for a realistic 5+ hours of battery life, and — if you'll be
+      walking or matatu-ing around campus daily — a laptop under about 1.8kg. A 15-inch gaming laptop looks
+      great in the shop but gets old fast in a backpack.
+    </p>
+
+    <h2 class="font-display font-bold text-2xl text-midnight mt-10">What to prioritise, by course</h2>
+    <p>
+      This is where a lot of students overspend on power they don't need, or underspend and hit a wall
+      halfway through the semester. Match the laptop to what you'll actually be running.
+    </p>
+
+    <ul class="list-disc pl-5 space-y-2">
+      <li>
+        <span class="font-semibold text-midnight">Business, humanities, social sciences, education:</span>
+        a light, long-battery-life laptop with a Core i5 and 8GB RAM is genuinely enough. Prioritise
+        portability and battery over raw power here.
+      </li>
+      <li>
+        <span class="font-semibold text-midnight">Computer Science / Software Engineering:</span>
+        go for 16GB RAM if your budget allows it — running an IDE, a browser with documentation open, and a
+        local server or emulator at the same time eats memory fast. A Core i5/i7 or Ryzen 5/7 is a
+        comfortable baseline.
+      </li>
+      <li>
+        <span class="font-semibold text-midnight">Engineering, architecture (AutoCAD, Revit, SolidWorks):</span>
+        these programs lean on both RAM and graphics. 16GB RAM plus a dedicated (not just integrated)
+        graphics card will save you real frustration compared to a general-purpose laptop.
+      </li>
+      <li>
+        <span class="font-semibold text-midnight">Design, film, media (Photoshop, Premiere, Illustrator):</span>
+        similar to engineering — 16GB RAM minimum, and a screen with accurate colour matters more here than
+        almost any other spec on this list.
+      </li>
+      <li>
+        <span class="font-semibold text-midnight">Nursing, medicine, general sciences:</span>
+        mostly document- and browser-based work with the occasional lab software — a solid Core i5 with
+        8GB RAM covers this well, so you can put the savings toward books and equipment instead.
+      </li>
+    </ul>
+
+    <h2 class="font-display font-bold text-2xl text-midnight mt-10">Ex-UK refurbished or brand new?</h2>
+    <p>
+      This is the single biggest lever on price. An Ex-UK business laptop — a ThinkPad, EliteBook, or
+      Latitude that was previously used in a UK office — gets you a genuinely higher-spec machine (often a
+      Core i5 or i7 with 8–16GB RAM) for roughly what a weak, budget "brand new" laptop costs. The trade-off
+      is a laptop that's a few years old and has visible signs of previous use, graded accordingly.
+    </p>
+    <p>
+      For most students, a Grade A Ex-UK laptop with a warranty is the better deal: same day-to-day
+      performance, lower price, money left over for the rest of your term. Brand new starts to make more
+      sense once your budget comfortably clears about KSh 65,000–70,000, where new machines start matching
+      or beating Ex-UK specs at a similar price point.
+    </p>
+
+    <h2 class="font-display font-bold text-2xl text-midnight mt-10">Realistic budgets in KSh</h2>
+    <p>These move a little with the market, but as a rough guide for late 2026:</p>
+    <ul class="list-disc pl-5 space-y-2">
+      <li><span class="font-semibold text-midnight">Under KSh 30,000:</span> entry Ex-UK laptops — fine for typing, browsing, and light coursework, but keep expectations modest on speed.</li>
+      <li><span class="font-semibold text-midnight">KSh 30,000–50,000:</span> the sweet spot for most students — Ex-UK Core i5/i7 business laptops with 8–16GB RAM.</li>
+      <li><span class="font-semibold text-midnight">KSh 50,000–90,000:</span> higher-spec Ex-UK workstation-class laptops (good for engineering/design coursework), or a new mid-range laptop.</li>
+      <li><span class="font-semibold text-midnight">KSh 90,000+:</span> new laptops with dedicated graphics — usually only necessary for gaming-adjacent or heavy rendering coursework.</li>
+    </ul>
+
+    <h2 class="font-display font-bold text-2xl text-midnight mt-10">A quick checklist before you buy</h2>
+    <ul class="list-disc pl-5 space-y-2">
+      <li>Ask what grade the Ex-UK unit is (A, A-, B) and what that grading actually inspects.</li>
+      <li>Confirm the warranty length in writing, not just verbally.</li>
+      <li>Check it has the ports you'll actually use — HDMI for presentations, enough USB ports, and ideally USB-C.</li>
+      <li>Test the keyboard and trackpad in person if you're buying from a physical store.</li>
+      <li>Ask about battery health specifically — it degrades with age and matters more than almost any other used-laptop spec.</li>
+    </ul>
+
+    <div class="mt-12 bg-ice rounded-2xl p-6 sm:p-8">
+      <p class="font-display font-bold text-lg text-midnight">Not sure which spec level fits your course and budget?</p>
+      <p class="mt-2 text-sm text-slate leading-relaxed">
+        Our shop lets you filter laptops by use case — School &amp; University is one tap away — or you can
+        message us your course and budget directly and we'll shortlist two or three options.
+      </p>
+      <div class="mt-5 flex flex-col sm:flex-row gap-3">
+        <a href="../index.html#store" class="text-center bg-midnight hover:bg-midnight2 transition-colors text-white font-semibold px-6 py-3 rounded-full text-sm">
+          Browse student laptops
+        </a>
+        <a href="https://wa.me/254723512233?text=Hi%20KymTech%2C%20I%27m%20a%20student%20looking%20for%20a%20laptop.%20My%20course%20is%20and%20my%20budget%20is"
+           target="_blank" rel="noopener"
+           class="text-center bg-leaf hover:bg-[#0f7a41] transition-colors text-white font-semibold px-6 py-3 rounded-full text-sm">
+          Get a recommendation on WhatsApp
+        </a>
+      </div>
+    </div>
+
+    <div class="mt-10 pt-8 border-t border-black/10">
+      <p class="text-sm text-slate">Read next:</p>
+      <a href="prevent-laptop-overheating-fan-noise.html" class="font-display font-semibold text-midnight hover:text-crimson transition-colors">
+        How to Maintain Your Laptop: Preventing Overheating &amp; Loud Fan Noise →
+      </a>
+    </div>
+
+  </article>
+</main>
+
+<!-- ============ FOOTER ============ -->
+<footer id="footer" class="bg-midnight2 pt-16 pb-28 sm:pb-16">
+  <div class="max-w-7xl mx-auto px-5 sm:px-8 grid sm:grid-cols-2 lg:grid-cols-4 gap-10">
+    <div>
+      <div class="flex items-center gap-2">
+        <span class="w-9 h-9 rounded-lg bg-white/10 flex items-center justify-center">
+          <span class="text-white font-display font-extrabold text-sm">K</span>
+        </span>
+        <span class="font-display font-bold text-lg text-white">Kym<span class="text-crimson">Tech</span></span>
+      </div>
+      <p class="text-white/50 text-sm mt-4 leading-relaxed">Ex-UK refurbished and brand-new laptops, sold directly to buyers across Kenya since day one.</p>
+    </div>
+
+    <div>
+      <p class="text-white font-semibold text-sm mb-4">Quick links</p>
+      <ul class="space-y-2.5 text-sm text-white/50">
+        <li><a href="../index.html#store" class="hover:text-white transition-colors">Shop laptops</a></li>
+        <li><a href="../index.html#why-exuk" class="hover:text-white transition-colors">Why Ex-UK</a></li>
+        <li><a href="../index.html#blog" class="hover:text-white transition-colors">Blog</a></li>
+        <li><a href="../index.html#process" class="hover:text-white transition-colors">How it works</a></li>
+      </ul>
+    </div>
+
+    <div>
+      <p class="text-white font-semibold text-sm mb-4">Store & pickup</p>
+      <ul class="space-y-2.5 text-sm text-white/50 leading-relaxed">
+        <li>Mfangano Street, Nairobi CBD (by appointment)</li>
+        <li>Mon–Sat, 8:30am–6:00pm</li>
+        <li>Pay-on-delivery within Nairobi & select towns</li>
+      </ul>
+    </div>
+
+    <div>
+      <p class="text-white font-semibold text-sm mb-4">Contact & payment</p>
+      <ul class="space-y-2.5 text-sm text-white/50">
+        <li>WhatsApp: +254 791 617 868</li>
+        <li>Email: hello@kymtech.co.ke</li>
+      </ul>
+      <div class="flex items-center gap-2 mt-4">
+        <span class="bg-white/10 text-white text-xs font-semibold px-3 py-1.5 rounded-md">M-PESA</span>
+        <span class="bg-white/10 text-white text-xs font-semibold px-3 py-1.5 rounded-md">Cash on Delivery</span>
+        <span class="bg-white/10 text-white text-xs font-semibold px-3 py-1.5 rounded-md">Bank Transfer</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="max-w-7xl mx-auto px-5 sm:px-8 mt-12 pt-6 border-t border-white/10 text-xs text-white/35 flex flex-col sm:flex-row justify-between gap-2">
+    <p>© 2026 KymTech.co.ke. All rights reserved.</p>
+    <p>Built for buyers across Nairobi, Mombasa, Kisumu & beyond.</p>
+  </div>
+</footer>
+
+<!-- Mobile fixed bottom bar, same as home -->
+<div class="fixed bottom-0 inset-x-0 z-50 sm:hidden bg-white border-t border-black/10 px-4 py-3 flex items-center gap-3">
+  <a href="../index.html#store" class="flex-1 text-center border border-midnight/15 text-midnight font-semibold text-sm py-3 rounded-full">
+    Browse laptops
+  </a>
+  <a href="https://wa.me/254723512233?text=Hi%20KymTech%2C%20I%27d%20like%20some%20help%20choosing%20a%20laptop" target="_blank" rel="noopener"
+     class="flex-1 text-center bg-leaf text-white font-semibold text-sm py-3 rounded-full flex items-center justify-center gap-2">
+    <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.7.44 3.36 1.28 4.83L2 22l5.4-1.42a9.9 9.9 0 0 0 4.64 1.18h.01c5.46 0 9.9-4.45 9.9-9.91C21.95 6.45 17.5 2 12.04 2zm5.8 14.1c-.24.68-1.4 1.32-1.94 1.4-.5.08-1.12.11-1.8-.11-.42-.13-.95-.31-1.64-.6-2.88-1.24-4.76-4.13-4.9-4.32-.14-.2-1.17-1.56-1.17-2.98 0-1.42.75-2.11 1.01-2.4.26-.28.58-.36.77-.36.2 0 .39 0 .56.01.18.01.42-.07.66.5.24.58.82 2.01.9 2.15.07.15.12.32.02.52-.1.2-.15.32-.3.5-.15.17-.3.38-.44.51-.15.15-.3.31-.13.6.17.3.76 1.25 1.63 2.02 1.12 1 2.06 1.31 2.36 1.46.3.15.47.13.65-.08.17-.2.73-.85.92-1.14.19-.3.39-.24.65-.15.26.1 1.68.79 1.96.94.29.14.48.21.55.33.07.12.07.7-.17 1.38z"/></svg>
+    WhatsApp
+  </a>
+</div>
+
+</body>
+</html>

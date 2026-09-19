@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>How to Maintain Your Laptop: Preventing Overheating & Loud Fan Noise | KymTech</title>
+<meta name="description" content="Why laptops overheat or get loud fans, how to fix it yourself, and when it's a sign you need a professional check-up — a maintenance guide from KymTech Kenya.">
+<meta name="robots" content="index, follow">
+<meta name="author" content="KymTech">
+
+<link rel="canonical" href="https://kymtech.co.ke/blog/prevent-laptop-overheating-fan-noise.html">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="KymTech">
+<meta property="og:title" content="How to Maintain Your Laptop: Preventing Overheating & Loud Fan Noise">
+<meta property="og:description" content="Why laptops overheat or get loud fans, how to fix it yourself, and when it's time for a professional check-up.">
+<meta property="og:url" content="https://kymtech.co.ke/blog/prevent-laptop-overheating-fan-noise.html">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="How to Maintain Your Laptop: Preventing Overheating & Loud Fan Noise">
+<meta name="twitter:description" content="Why laptops overheat or get loud fans, how to fix it yourself, and when it's time for a professional check-up.">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "How to Maintain Your Laptop: Preventing Overheating & Loud Fan Noise",
+  "description": "Why laptops overheat or get loud fans, how to fix it yourself, and when it's a sign you need a professional check-up.",
+  "author": { "@type": "Organization", "name": "KymTech" },
+  "publisher": {
+    "@type": "Organization",
+    "name": "KymTech",
+    "url": "https://kymtech.co.ke/"
+  },
+  "mainEntityOfPage": "https://kymtech.co.ke/blog/prevent-laptop-overheating-fan-noise.html",
+  "datePublished": "2026-09-08",
+  "dateModified": "2026-09-08"
+}
+</script>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<script src="https://cdn.tailwindcss.com"></script>
+<script src="../js/tailwind-config.js"></script>
+<link rel="stylesheet" href="../css/style.css">
+</head>
+<body class="text-midnight antialiased">
+
+<header class="sticky top-0 z-50 bg-white/90 backdrop-blur-md border-b border-black/5">
+  <div class="max-w-7xl mx-auto px-5 sm:px-8 h-16 flex items-center justify-between">
+    <a href="../index.html" class="flex items-center gap-2 shrink-0">
+      <span class="w-9 h-9 rounded-lg bg-midnight flex items-center justify-center">
+        <span class="text-white font-display font-extrabold text-sm">K</span>
+      </span>
+      <span class="font-display font-bold text-lg tracking-tight">Kym<span class="text-crimson">Tech</span></span>
+    </a>
+
+    <nav class="hidden md:flex items-center gap-8 text-sm font-medium text-midnight/80">
+      <a href="../index.html#store" class="hover:text-crimson transition-colors">Shop Laptops</a>
+      <a href="../index.html#blog" class="hover:text-crimson transition-colors">Blog</a>
+      <a href="../index.html#footer" class="hover:text-crimson transition-colors">Contact</a>
+    </nav>
+
+    <a href="https://wa.me/254723512233?text=Hi%20KymTech%2C%20I%27d%20like%20some%20help%20choosing%20a%20laptop"
+       target="_blank" rel="noopener"
+       class="flex items-center gap-2 bg-leaf hover:bg-[#0f7a41] text-white text-sm font-semibold px-4 py-2.5 rounded-full transition-colors">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.7.44 3.36 1.28 4.83L2 22l5.4-1.42a9.9 9.9 0 0 0 4.64 1.18h.01c5.46 0 9.9-4.45 9.9-9.91C21.95 6.45 17.5 2 12.04 2zm5.8 14.1c-.24.68-1.4 1.32-1.94 1.4-.5.08-1.12.11-1.8-.11-.42-.13-.95-.31-1.64-.6-2.88-1.24-4.76-4.13-4.9-4.32-.14-.2-1.17-1.56-1.17-2.98 0-1.42.75-2.11 1.01-2.4.26-.28.58-.36.77-.36.2 0 .39 0 .56.01.18.01.42-.07.66.5.24.58.82 2.01.9 2.15.07.15.12.32.02.52-.1.2-.15.32-.3.5-.15.17-.3.38-.44.51-.15.15-.3.31-.13.6.17.3.76 1.25 1.63 2.02 1.12 1 2.06 1.31 2.36 1.46.3.15.47.13.65-.08.17-.2.73-.85.92-1.14.19-.3.39-.24.65-.15.26.1 1.68.79 1.96.94.29.14.48.21.55.33.07.12.07.7-.17 1.38z"/></svg>
+      WhatsApp Us
+    </a>
+  </div>
+</header>
+
+<header class="bg-midnight py-14 sm:py-20">
+  <div class="max-w-3xl mx-auto px-5 sm:px-8 text-white">
+    <nav aria-label="Breadcrumb" class="text-xs text-white/50 flex items-center gap-2">
+      <a href="../index.html" class="hover:text-white transition-colors">Home</a>
+      <span>/</span>
+      <a href="../index.html#blog" class="hover:text-white transition-colors">Blog</a>
+      <span>/</span>
+      <span class="text-white/70">Maintenance</span>
+    </nav>
+    <span class="badge inline-block mt-6 px-2.5 py-1 rounded-full bg-crimson/15 text-crimson">Maintenance</span>
+    <h1 class="font-display font-extrabold text-3xl sm:text-4xl leading-tight mt-4">
+      How to Maintain Your Laptop: Preventing Overheating &amp; Loud Fan Noise
+    </h1>
+    <p class="mt-4 text-white/60 text-sm">Published 8 September 2026 &middot; 6 min read</p>
+  </div>
+</header>
+
+<main class="max-w-3xl mx-auto px-5 sm:px-8 py-14 sm:py-16">
+  <article class="space-y-6 text-[15px] sm:text-base leading-relaxed text-midnight/85">
+
+    <p>
+      "My fan sounds like a plane taking off" is one of the most common things we hear from customers
+      bringing laptops in for a check-up. The good news: it's almost always fixable, and most causes are
+      things you can prevent yourself once you know what to look for. Here's what's actually going on
+      inside the laptop, and what to do about it.
+    </p>
+
+    <h2 class="font-display font-bold text-2xl text-midnight mt-10">Why laptops overheat in the first place</h2>
+    <p>
+      A laptop's processor generates heat the moment it's doing any real work, and it relies on a small fan
+      pulling air across a heatsink to carry that heat away. When that airflow gets blocked or reduced, the
+      processor gets hotter, the fan spins faster to compensate — which is where the loud noise comes from —
+      and eventually the laptop slows itself down on purpose (this is called thermal throttling) to avoid
+      damage. In Kenya specifically, dust and warm ambient temperatures make this happen faster than it
+      would in a cooler, less dusty climate.
+    </p>
+
+    <h2 class="font-display font-bold text-2xl text-midnight mt-10">The usual suspects</h2>
+
+    <h3 class="font-display font-semibold text-lg text-midnight mt-6">1. Dust in the vents and fan</h3>
+    <p>
+      This is the single most common cause we see. Dust builds up on the heatsink fins and fan blades over
+      months of normal use, acting like a blanket over the parts that are supposed to release heat. It's
+      also the easiest one to prevent — and to fix.
+    </p>
+
+    <h3 class="font-display font-semibold text-lg text-midnight mt-6">2. Blocked vents from soft surfaces</h3>
+    <p>
+      Using a laptop directly on a bed, sofa, or your lap blocks the intake and exhaust vents underneath it,
+      which starves the fan of airflow no matter how clean it is inside. This is a very fixable habit, not a
+      hardware problem.
+    </p>
+
+    <h3 class="font-display font-semibold text-lg text-midnight mt-6">3. Too many demanding programs running at once</h3>
+    <p>
+      Dozens of open browser tabs, background apps, and auto-starting programs all quietly use CPU in the
+      background, which keeps the processor — and therefore the fan — working harder than it needs to for
+      what you're actually doing right now.
+    </p>
+
+    <h3 class="font-display font-semibold text-lg text-midnight mt-6">4. Old or dried-out thermal paste</h3>
+    <p>
+      Thermal paste is the material between the processor and the heatsink that helps heat transfer
+      efficiently. On laptops several years old — including some Ex-UK units, which is exactly why we test
+      and grade for this — that paste can dry out over time and stop doing its job well, causing higher
+      running temperatures even with clean vents.
+    </p>
+
+    <h3 class="font-display font-semibold text-lg text-midnight mt-6">5. A worn-out fan</h3>
+    <p>
+      If the sound isn't just "loud" but grinding, rattling, or clicking, that's usually a mechanical issue
+      with the fan bearing itself rather than dust or software — this one needs a physical fix, not a
+      software fix.
+    </p>
+
+    <h2 class="font-display font-bold text-2xl text-midnight mt-10">What you can do yourself</h2>
+    <ul class="list-disc pl-5 space-y-2">
+      <li><span class="font-semibold text-midnight">Use it on a hard, flat surface.</span> A desk, table, or a laptop stand keeps the underside vents clear.</li>
+      <li><span class="font-semibold text-midnight">Clean the external vents regularly.</span> A can of compressed air blown gently into the vents (with the laptop off) clears surface dust — do this every couple of months if you're in a dusty environment.</li>
+      <li><span class="font-semibold text-midnight">Close what you're not using.</span> Unused browser tabs and background apps add up — check your Task Manager (Windows) or Activity Monitor (Mac) if the fan runs high even when you're doing something light.</li>
+      <li><span class="font-semibold text-midnight">Keep it out of direct sun and hot cars.</span> Ambient heat gives the fan less room to work with before things get too hot.</li>
+      <li><span class="font-semibold text-midnight">Keep your operating system and drivers updated.</span> Manufacturers occasionally release updates that improve how the fan curve responds to load.</li>
+      <li><span class="font-semibold text-midnight">Consider a cooling pad</span> if you regularly run demanding software (video editing, CAD, gaming) for long stretches.</li>
+    </ul>
+
+    <h2 class="font-display font-bold text-2xl text-midnight mt-10">When it's time for a professional check-up, not a DIY fix</h2>
+    <p>
+      A few signs mean it's worth having someone open the laptop properly rather than continuing to clean
+      the outside vents:
+    </p>
+    <ul class="list-disc pl-5 space-y-2">
+      <li>Grinding, rattling, or clicking noise from the fan, rather than just "loud".</li>
+      <li>The laptop shuts down unexpectedly under load (a safety cutoff triggered by overheating).</li>
+      <li>It's still running hot and loud immediately after a clean, external dust removal.</li>
+      <li>Any burning smell — stop using it and get it checked immediately.</li>
+    </ul>
+    <p>
+      We'd genuinely discourage opening the chassis yourself unless you've done it before — it's easy to
+      damage a ribbon cable or void a warranty doing something that a proper internal clean and, if needed,
+      a thermal paste replacement would have solved safely.
+    </p>
+
+    <div class="mt-12 bg-ice rounded-2xl p-6 sm:p-8">
+      <p class="font-display font-bold text-lg text-midnight">Fan sounding rough, or laptop running hotter than it used to?</p>
+      <p class="mt-2 text-sm text-slate leading-relaxed">
+        Message us a quick description of what you're hearing or noticing — we can usually tell you over
+        WhatsApp whether it sounds like a simple clean or something that needs a closer look.
+      </p>
+      <div class="mt-5 flex flex-col sm:flex-row gap-3">
+        <a href="https://wa.me/254723512233?text=Hi%20KymTech%2C%20my%20laptop%20is%20overheating%20%2F%20the%20fan%20is%20loud.%20Here%27s%20what%27s%20happening%3A%20"
+           target="_blank" rel="noopener"
+           class="text-center bg-leaf hover:bg-[#0f7a41] transition-colors text-white font-semibold px-6 py-3 rounded-full text-sm">
+          Describe the issue on WhatsApp
+        </a>
+        <a href="../index.html#store" class="text-center bg-midnight hover:bg-midnight2 transition-colors text-white font-semibold px-6 py-3 rounded-full text-sm">
+          Or browse replacement laptops
+        </a>
+      </div>
+    </div>
+
+    <div class="mt-10 pt-8 border-t border-black/10">
+      <p class="text-sm text-slate">Read next:</p>
+      <a href="choosing-a-laptop-for-college-kenya.html" class="font-display font-semibold text-midnight hover:text-crimson transition-colors">
+        ← How to Choose the Best Laptop for College or University in Kenya
+      </a>
+    </div>
+
+  </article>
+</main>
+
+<!-- ============ FOOTER ============ -->
+<footer id="footer" class="bg-midnight2 pt-16 pb-28 sm:pb-16">
+  <div class="max-w-7xl mx-auto px-5 sm:px-8 grid sm:grid-cols-2 lg:grid-cols-4 gap-10">
+    <div>
+      <div class="flex items-center gap-2">
+        <span class="w-9 h-9 rounded-lg bg-white/10 flex items-center justify-center">
+          <span class="text-white font-display font-extrabold text-sm">K</span>
+        </span>
+        <span class="font-display font-bold text-lg text-white">Kym<span class="text-crimson">Tech</span></span>
+      </div>
+      <p class="text-white/50 text-sm mt-4 leading-relaxed">Ex-UK refurbished and brand-new laptops, sold directly to buyers across Kenya since day one.</p>
+    </div>
+
+    <div>
+      <p class="text-white font-semibold text-sm mb-4">Quick links</p>
+      <ul class="space-y-2.5 text-sm text-white/50">
+        <li><a href="../index.html#store" class="hover:text-white transition-colors">Shop laptops</a></li>
+        <li><a href="../index.html#why-exuk" class="hover:text-white transition-colors">Why Ex-UK</a></li>
+        <li><a href="../index.html#blog" class="hover:text-white transition-colors">Blog</a></li>
+        <li><a href="../index.html#process" class="hover:text-white transition-colors">How it works</a></li>
+      </ul>
+    </div>
+
+    <div>
+      <p class="text-white font-semibold text-sm mb-4">Store & pickup</p>
+      <ul class="space-y-2.5 text-sm text-white/50 leading-relaxed">
+        <li>Mfangano Street, Nairobi CBD (by appointment)</li>
+        <li>Mon–Sat, 8:30am–6:00pm</li>
+        <li>Pay-on-delivery within Nairobi & select towns</li>
+      </ul>
+    </div>
+
+    <div>
+      <p class="text-white font-semibold text-sm mb-4">Contact & payment</p>
+      <ul class="space-y-2.5 text-sm text-white/50">
+        <li>WhatsApp: +254 791 617 868</li>
+        <li>Email: hello@kymtech.co.ke</li>
+      </ul>
+      <div class="flex items-center gap-2 mt-4">
+        <span class="bg-white/10 text-white text-xs font-semibold px-3 py-1.5 rounded-md">M-PESA</span>
+        <span class="bg-white/10 text-white text-xs font-semibold px-3 py-1.5 rounded-md">Cash on Delivery</span>
+        <span class="bg-white/10 text-white text-xs font-semibold px-3 py-1.5 rounded-md">Bank Transfer</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="max-w-7xl mx-auto px-5 sm:px-8 mt-12 pt-6 border-t border-white/10 text-xs text-white/35 flex flex-col sm:flex-row justify-between gap-2">
+    <p>© 2026 KymTech.co.ke. All rights reserved.</p>
+    <p>Built for buyers across Nairobi, Mombasa, Kisumu & beyond.</p>
+  </div>
+</footer>
+
+<div class="fixed bottom-0 inset-x-0 z-50 sm:hidden bg-white border-t border-black/10 px-4 py-3 flex items-center gap-3">
+  <a href="../index.html#store" class="flex-1 text-center border border-midnight/15 text-midnight font-semibold text-sm py-3 rounded-full">
+    Browse laptops
+  </a>
+  <a href="https://wa.me/254723512233?text=Hi%20KymTech%2C%20I%27d%20like%20some%20help%20choosing%20a%20laptop" target="_blank" rel="noopener"
+     class="flex-1 text-center bg-leaf text-white font-semibold text-sm py-3 rounded-full flex items-center justify-center gap-2">
+    <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.7.44 3.36 1.28 4.83L2 22l5.4-1.42a9.9 9.9 0 0 0 4.64 1.18h.01c5.46 0 9.9-4.45 9.9-9.91C21.95 6.45 17.5 2 12.04 2zm5.8 14.1c-.24.68-1.4 1.32-1.94 1.4-.5.08-1.12.11-1.8-.11-.42-.13-.95-.31-1.64-.6-2.88-1.24-4.76-4.13-4.9-4.32-.14-.2-1.17-1.56-1.17-2.98 0-1.42.75-2.11 1.01-2.4.26-.28.58-.36.77-.36.2 0 .39 0 .56.01.18.01.42-.07.66.5.24.58.82 2.01.9 2.15.07.15.12.32.02.52-.1.2-.15.32-.3.5-.15.17-.3.38-.44.51-.15.15-.3.31-.13.6.17.3.76 1.25 1.63 2.02 1.12 1 2.06 1.31 2.36 1.46.3.15.47.13.65-.08.17-.2.73-.85.92-1.14.19-.3.39-.24.65-.15.26.1 1.68.79 1.96.94.29.14.48.21.55.33.07.12.07.7-.17 1.38z"/></svg>
+    WhatsApp
+  </a>
+</div>
+
+</body>
+</html>

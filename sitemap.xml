@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  sitemap.xml for kymtech.co.ke
+
+  A plain list of every page on the site, so search engines and AI
+  crawlers don't have to guess what exists just from following links.
+
+  When you publish a new blog article, add a matching <url> block here
+  (copy one of the two below and update loc/lastmod) — otherwise the new
+  page can still be found by clicking through the site, but it may take
+  longer to get discovered and indexed on its own.
+-->
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
+  <url>
+    <loc>https://kymtech.co.ke/</loc>
+    <lastmod>2026-09-08</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+  </url>
+
+  <url>
+    <loc>https://kymtech.co.ke/blog/choosing-a-laptop-for-college-kenya.html</loc>
+    <lastmod>2026-09-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://kymtech.co.ke/blog/prevent-laptop-overheating-fan-noise.html</loc>
+    <lastmod>2026-09-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+</urlset>
